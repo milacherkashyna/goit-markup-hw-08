@@ -6,10 +6,21 @@ body {
 }
 
 .container {
-  max-width: 1200px;
-  padding: 0 15px;
-  margin: 0 auto;
-}
+    // max-width: 1200px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+    @include mobile {
+      width: $mobile;
+    }
+    @include tablet {
+      width: $tablet;
+    }
+    @include desktop {
+      width: $desktop;
+    }
+
+  }
 
 ul {
   list-style: none;

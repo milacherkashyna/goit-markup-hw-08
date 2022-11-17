@@ -1,22 +1,73 @@
 .hero {
-  max-width: 1600px;
+  max-width: 480px;
   margin: 0 auto;
-  padding: 200px 0;
+  padding: 118px 0;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/img_hero.jpg);
+    url(../images/header-bcg-mobile.jpg);
+
+  @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+  screen and (min-resolution: 192dpi) and (max-width: 767px),
+  screen and (min-resolution: 2dppx) and (max-width: 767px) {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/header-bcg-mobile2.jpg);
+
+  }
+
+  @include tablet {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/header-bcg-tablet.jpg);
+  }
+
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: $tablet),
+  screen and (min-resolution: 192dpi) and (min-width: $tablet),
+  screen and (min-resolution: 2dppx) and (min-width: $tablet) {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/header-bcg-tablet2.jpg);
+  }
+
+  @include desktop {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/header-bcg-desktop.jpg);
+  }
+
+
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: $desktop),
+  screen and (min-resolution: 192dpi) and (min-width: $desktop),
+  screen and (min-resolution: 2dppx) and (min-width: $desktop) {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/header-bcg-desktop2.jpg);
+  }
+
+
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+
+  @include tablet {
+    max-width: $tablet;
+  }
+
+  @include desktop {
+    max-width: 1600px;
+    padding: 200px 0;
+  }
+
 }
 
 .hero__title {
-  max-width: 696px;
+  max-width: 360px;
   margin: 0 auto;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: calc(42/26);
   letter-spacing: 0.06em;
   text-align: center;
   text-transform: uppercase;
   color: var(--white);
+
+  @include desktop {
+    max-width: 696px;
+    font-size: 44px;
+    line-height: calc(60/44);
+  }
 }
