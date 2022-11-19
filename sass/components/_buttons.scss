@@ -1,6 +1,10 @@
 .button {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // display: block;
   min-width: 200px;
+  height: 50px;
   padding: 10px 28px;
   font-weight: 700;
   font-size: var(--f-size16);
@@ -17,15 +21,15 @@
 .button--hero,
 .button--modal {
   margin: 30px auto 0;
-  padding: 10px 32px;
+  // padding: 10px 32px;
 
 
 }
 
 .button__subscribe {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
   gap: 10px;
   fill: var(--white);
 }

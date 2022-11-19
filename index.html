@@ -11,7 +11,7 @@
       rel="stylesheet"
     /> -->
     <link rel="stylesheet" href="./css/main.min.css" />
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
   </head>
   <body>
@@ -36,12 +36,11 @@
             </a>
           </li>
           <li>
-            <a class="header-contacts__link" href="tel:+380961111111">
+            <a class="header-contacts__link header-contacts__link--tel" href="tel:+380961111111">
               <svg width="10" height="16">
                 <use href="./images/icons.svg#icon-smartphone"></use>
               </svg>
-              +38 096 111 11 11
-            </a>
+              +38 096 111 11 11</a>
           </li>
         </ul>
         <button class="menu__button js-open-menu"  type="button">
@@ -58,11 +57,23 @@
             </svg>
           </button>
     
-          <ul class="mobile-menu">
-            <li><a href="" class="link">About</a></li>
-            <li><a href="" class="link">Products</a></li>
-            <li><a href="" class="link">Contacts</a></li>
-            <li><a href="" class="link">Career</a></li>
+          <ul class="menu__nav">
+            <li class="menu__item"><a href="" class="menu__link">Студія</a></li>
+            <li class="menu__item"><a href="" class="menu__link">Портфоліо</a></li>
+            <li class="menu__item"><a href="" class="menu__link">Контакти</a></li>
+          </ul>
+          <ul clas="menu__contacts">
+            <li><a class="menu__contacts--tel" href="tel:+380961111111">+38 096 111 11 11</a></li>
+            <li><a class="menu__contacts--mail" href="mailto:info@devstudio.com">info@devstudio.com</a></li>        
+          </ul>
+          <ul class="menu__social">
+            <li><a class="menu__social--ref" href="#">Instagram</a></li>
+            <li><vr class="menu__social--vr"></vr></li>
+            <li><a class="menu__social--ref" href="#">Twitter</a></li>
+            <li><vr class="menu__social--vr"></vr></li>
+            <li><a class="menu__social--ref" href="#">Facebook</a></li>
+            <li><vr class="menu__social--vr"></vr></li>
+            <li><a class="menu__social--ref" href="#">LinkedIn</a></li>
           </ul>
         </div>
       </div>
