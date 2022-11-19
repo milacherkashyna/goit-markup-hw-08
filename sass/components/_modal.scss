@@ -38,7 +38,6 @@
     @include desktop {
       max-width: 528px;
       max-height: 581px;
-      
     }
 }
 
@@ -61,7 +60,7 @@
   margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   letter-spacing: 0.03em;
   text-align: center;
   color: var(--dark);
@@ -161,10 +160,13 @@
 }
 
 .checkbox__text {
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height:calc(14/12);
   letter-spacing: 0.03em;
   color: var(--grey);
+ @include desktop {
+
+ } 
 }
 
 .checkbox__agree {
