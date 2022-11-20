@@ -324,12 +324,16 @@ ul {
 }
 @media screen and (min-width: 768px) {
   .nav {
-    display: flow;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 @media screen and (min-width: 1200px) {
   .nav {
-    display: flow;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 

@@ -13,9 +13,9 @@
   @include mobile {
     display: none;}
   @include tablet {
-      display: flow;}
+      display: flex;}
   @include desktop {
-      display: flow;}
+      display: flex;}
 }
 
 .header-menu {
