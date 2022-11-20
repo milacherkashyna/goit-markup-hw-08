@@ -9,6 +9,7 @@
   // justify-content:space-between
 }
 .nav {
+  display: none;
   @include mobile {
     display: none;}
   @include tablet {
