@@ -319,6 +319,7 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 
 .nav {
@@ -510,8 +511,8 @@ ul {
   position: fixed;
   top: 0;
   left: 0;
-  width: 480px;
-  height: 796px;
+  width: 100%;
+  height: 100%;
   padding: 48px 40px;
   background-color: var(--white);
   -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
@@ -927,21 +928,31 @@ ul {
   background-color: var(--dark-grey);
 }
 
-.contacts {
-  margin-right: 70px;
-}
-
 .footer__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .contacts__logo {
-  margin-bottom: 20px;
   color: var(--white);
 }
 
@@ -953,12 +964,9 @@ ul {
   letter-spacing: 0.03em;
 }
 
-.contacts__item:not(:last-of-type) {
-  margin-bottom: 9px;
-}
-
 .contacts__link {
   display: block;
+  text-align: center;
   text-decoration: none;
   color: var(--opasity);
   -webkit-transition: color var(--time-animation) var(--cubic-bezier);
@@ -976,21 +984,29 @@ ul {
 .subscribe__title {
   display: block;
   margin-top: 0;
-  margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.143;
   letter-spacing: 0.03em;
+  text-align: center;
   text-transform: uppercase;
   color: var(--white);
 }
 
-.join {
-  margin-right: 70px;
-}
-
 .subscribe {
-  margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .subscribe__mail {
@@ -1034,6 +1050,11 @@ ul {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 12px;
+}
+
+.button__subscribe {
+  gap: 10px;
+  fill: var(--white);
 }
 
 .hero {
@@ -1236,6 +1257,9 @@ ul {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .team__item {

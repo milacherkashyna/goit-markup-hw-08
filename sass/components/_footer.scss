@@ -4,16 +4,22 @@
 }
 
 .contacts {
-  margin-right: 70px;
+  // margin-right: 70px;
 }
 
 .footer__container {
   display: flex;
-  align-items: baseline;
+  flex-wrap: wrap;
+  // align-items: baseline;
+  justify-content: center;
 }
-
+.contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .contacts__logo {
-  margin-bottom: 20px;
+  // margin-bottom: 20px;
   color: var(--white);
 }
 
@@ -25,12 +31,13 @@
   letter-spacing: 0.03em;
 }
 
-.contacts__item:not(:last-of-type) {
-  margin-bottom: 9px;
-}
+// .contacts__item:not(:last-of-type) {
+//   margin-bottom: 9px;
+// }
 
 .contacts__link {
   display: block;
+  text-align: center;
   text-decoration: none;
   color: var(--opasity);
   transition: color var(--time-animation) var(--cubic-bezier);
@@ -49,21 +56,26 @@
 .subscribe__title {
   display: block;
   margin-top: 0;
-  margin-bottom: 20px;
+  // margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.143;
   letter-spacing: 0.03em;
+  text-align: center;
   text-transform: uppercase;
   color: var(--white);
 }
 
-.join {
-  margin-right: 70px;
-}
+// .join {
+//   margin-right: 70px;
+// }
 
 .subscribe {
-  margin-left: auto;
+  // margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .subscribe__mail {
@@ -87,4 +99,11 @@
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
+}
+.button__subscribe {
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+  gap: 10px;
+  fill: var(--white);
 }
