@@ -279,11 +279,18 @@ ul {
 }
 
 .section__title {
-  margin-bottom: 50px;
-  font-size: 36px;
-  line-height: 1.17;
+  margin-bottom: 30px;
+  font-size: 28px;
+  line-height: 1.1785714286;
   text-align: center;
   letter-spacing: 0.03em;
+}
+@media screen and (min-width: 1200px) {
+  .section__title {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.2727272727;
+  }
 }
 
 .scr-reader {
@@ -324,7 +331,9 @@ ul {
 }
 @media screen and (min-width: 768px) {
   .nav {
-    display: f;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -876,6 +885,12 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 10px;
 }
 
@@ -1167,7 +1182,9 @@ ul {
 }
 @media screen and (min-width: 1200px) {
   .directions {
-    display: flow;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
@@ -1229,13 +1246,13 @@ ul {
 }
 
 .team__description {
-  padding: 30px 30px;
+  padding: 30px 30px 24px 30px;
 }
 
 .team__name {
   font-size: var(--f-size16);
   font-weight: 500;
-  line-height: 1.36;
+  line-height: 1.171875;
   text-align: center;
   letter-spacing: 0.03em;
 }
@@ -1244,7 +1261,7 @@ ul {
   margin-top: 10px;
   margin-bottom: 16px;
   font-size: var(--f-size16);
-  line-height: 1.36;
+  line-height: 1.171875;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--grey);
@@ -1259,15 +1276,24 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   gap: 30px;
 }
 
 .clients__item {
-  width: 170px;
+  width: 210px;
   height: 92px;
+}
+@media screen and (min-width: 768px) {
+  .clients__item {
+    width: 226px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients__item {
+    width: 170px;
+  }
 }
 
 .clients__ref {
