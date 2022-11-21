@@ -2,7 +2,7 @@
   display: none;
   padding-top: 0;
   @include desktop {
-    display: flow;
+    display: flex;
   }
 }
 
