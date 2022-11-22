@@ -419,13 +419,6 @@ ul {
     display: flex;
   }
 }
-@media screen and (min-width: 1200px) {
-  .header-contacts__link {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-}
 
 .header-contacts__link svg {
   fill: var(--grey);

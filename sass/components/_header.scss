@@ -81,10 +81,7 @@
     display: flex;
   }
 
-  @include desktop {
-    display: flex;
   }
-}
 
 .header-contacts__link svg {
   fill: var(--grey);
