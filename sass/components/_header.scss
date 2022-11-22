@@ -10,7 +10,11 @@
   position: relative;
   // justify-content:space-between
 }
-
+.header__logo {
+  @media screen and (max-width:767px){
+  padding: 16px 0 15px;  
+  }
+}
 .nav {
   display: none;
 

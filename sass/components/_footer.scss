@@ -12,11 +12,15 @@
 
   @include tablet {
     flex-direction: row;
+    gap: 60px 165px;
+    
   }
 
   @include desktop {
     flex-direction: row;
     align-items: baseline;
+    justify-content: flex-start;
+    gap: 70px;
   }
 
 }
@@ -33,6 +37,7 @@
 }
 
 .contacts__logo {
+  margin-bottom: 28px;
   color: var(--white);
 }
 
@@ -96,21 +101,25 @@
 
 .contacts,
 .join {
-  @media screen and (min-width: 769px) and (max-width: 1199px) {
-    flex-basis: calc(50% - 30px);
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    flex-basis: calc((100% - 165px)/2);
+  }
+}
+.join {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding-top: 5px;;
   }
 }
 
-
 .subscribe {
-  // margin-left: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
+  
   @include desktop {
     align-items: flex-start;
+    margin-left: auto;
   }
 
   // gap: 20px;
