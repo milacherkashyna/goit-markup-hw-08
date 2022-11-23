@@ -2,13 +2,22 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
   gap: 30px;
 }
 
 .clients__item {
-  width: 210px;
-  height: 92px;
+  max-width: 210px;
+  max-height: 92px;
+  flex-basis: calc((100% - 30px))/2;
+  @include mobile {
+    width: 210px;
+    height: 92px;
+  }
+
   @include tablet {
+    width: 210px;
+    height: 92px;
     flex-basis: calc((100% - 60px)/3);
   }
   @include desktop {

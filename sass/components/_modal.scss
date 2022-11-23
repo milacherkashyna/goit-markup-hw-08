@@ -35,10 +35,11 @@
   transform: translate(-50%, -50%) scale(1);
   transition: transform var(--time-animation) var(--cubic-bezier),
     opacity var(--time-animation) var(--cubic-bezier);
-    @include desktop {
-      max-width: 528px;
-      max-height: 581px;
-    }
+
+  @include desktop {
+    max-width: 528px;
+    max-height: 581px;
+  }
 }
 
 .modal__btn-close {
@@ -68,6 +69,10 @@
 
 .form__item {
   margin-bottom: 10px;
+
+  @include desktop {
+    margin-bottom: 20px;
+  }
 }
 
 .form__item:last-child {
@@ -80,7 +85,6 @@
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
-
   color: var(--grey);
 }
 
@@ -140,6 +144,10 @@
   display: block;
   width: 16px;
   height: 15px;
+
+  @include desktop {
+    margin-left: 12px;
+  }
 }
 
 .checkbox__castom {
@@ -161,14 +169,15 @@
 
 .checkbox__text {
   font-size: 12px;
-  line-height:calc(14/12);
+  line-height: calc(14/12);
   letter-spacing: 0.03em;
   color: var(--grey);
- @include desktop {
-
- } 
 }
 
 .checkbox__agree {
   color: var(--blue);
+}
+
+.button--modal {
+  margin: 30px auto 0;
 }

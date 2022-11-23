@@ -13,7 +13,7 @@
   @include tablet {
     flex-direction: row;
     gap: 60px 165px;
-    
+
   }
 
   @include desktop {
@@ -74,13 +74,6 @@
   color: var(--white);
 }
 
-// .join {
-//   margin-right: 70px;
-// }
-// .contacts__item:not(:last-child):not(:last-child) {
-//   margin-bottom: 12px;
-// ??????????????????????}
-
 .join__title,
 .subscribe__title {
   display: block;
@@ -105,9 +98,11 @@
     flex-basis: calc((100% - 165px)/2);
   }
 }
+
 .join {
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-    padding-top: 5px;;
+    padding-top: 5px;
+    ;
   }
 }
 
@@ -116,13 +111,11 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  
+
   @include desktop {
     align-items: flex-start;
     margin-left: auto;
   }
-
-  // gap: 20px;
 }
 
 .subscribe__mail {
@@ -156,15 +149,11 @@
 
   @include desktop {
     flex-direction: row;
-    // align-items: left;
     gap: 12px;
   }
 }
 
 .subscribe__button {
-  // display: flex;
-  // align-items: center;
-  // justify-content: center;
   gap: 10px;
   fill: var(--white);
 }
