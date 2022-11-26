@@ -1092,11 +1092,39 @@ ul {
   }
 }
 
+.subscribe__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+}
+@media screen and (min-width: 1200px) {
+  .subscribe__form {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 12px;
+  }
+}
+
 .subscribe__mail {
   display: inline-block;
   padding: 15px 16px;
   margin-bottom: 20px;
-  width: 260px;
+  width: 100%;
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: var(--white);
@@ -1108,11 +1136,6 @@ ul {
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
 @media screen and (min-width: 480px) {
-  .subscribe__mail {
-    width: 450px;
-  }
-}
-@media screen and (min-width: 768px) {
   .subscribe__mail {
     width: 450px;
   }
@@ -1142,33 +1165,6 @@ ul {
 
 .subscribe__mail::placeholder {
   color: rgba(255, 255, 255, 0.6);
-}
-
-.subscribe__form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-@media screen and (min-width: 1200px) {
-  .subscribe__form {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    gap: 12px;
-  }
 }
 
 .subscribe__button {
