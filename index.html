@@ -64,7 +64,7 @@
             <li class="menu__item"><a href="" class="menu__link">Портфоліо</a></li>
             <li class="menu__item"><a href="" class="menu__link">Контакти</a></li>
           </ul>
-          <ul clas="menu__contacts">
+          <ul class="menu__contacts">
             <li><a class="menu__contacts--tel" href="tel:+380961111111">+38 096 111 11 11</a></li>
             <li>
               <a class="menu__contacts--mail" href="mailto:info@devstudio.com"
@@ -219,15 +219,44 @@
           <h2 class="section__title drn">Чим ми займаємося</h2>
           <ul class="directions__list">
             <li class="directions__item">
-              <img src="./images/box1.jpg" width="370" alt="Десктопні додатки" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/direction-images/box1.jpg    1x,
+                    ./images/direction-images/box1@2x.jpg 2x
+                  "
+                />
+                <img src="./images/direction-images/box1.jpg" width="370" alt="Десктопні додатки" />
+              </picture>
+
               <h2 class="directions__title">Десктопні додатки</h2>
             </li>
             <li class="directions__item">
-              <img src="./images/box2.jpg" width="370" alt="Мобільні додатки" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/direction-images/box2.jpg    1x,
+                    ./images/direction-images/box2@2x.jpg 2x
+                  "
+                />
+                <img src="./images/direction-images/box2.jpg" width="370" alt="Мобільні додатки" />
+              </picture>
               <h2 class="directions__title">Мобільні додатки</h2>
             </li>
             <li class="directions__item">
-              <img src="./images/box3.jpg" width="370" alt="Дизайнерські рішення" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/direction-images/box3.jpg    1x,
+                    ./images/direction-images/box3@2x.jpg 2x
+                  "
+                />
+              <img
+                src="./images/direction-images/box3.jpg"
+                width="370"
+                alt="Дизайнерські рішення"
+              />
+            </picture>
               <h2 class="directions__title">Дизайнерські рішення</h2>
             </li>
           </ul>
@@ -246,7 +275,6 @@
                     ./images/team-images/ihor-mobile@2x.jpg 2x
                   "
                   media="(max-width:767px)"
-                  sizes="450px"
                 />
                 <source
                   srcset="
@@ -254,7 +282,6 @@
                     ./images/team-images/ihor-tablet@2x.jpg 2x
                   "
                   media="(max-width:1199px)"
-                  sizes="354px"
                 />
                 <source
                   srcset="
@@ -262,7 +289,6 @@
                     ./images/team-images/ihor-desktop@2x.jpg 2x
                   "
                   media="(min-width:1200px)"
-                  sizes="270px"
                 />
                 <img src="./images/team-images/ihor-mobile.jpg" alt="Фото Ігор Дем'яненко" />
               </picture>
@@ -310,7 +336,6 @@
                     ./images/team-images/olha-mobile@2x.jpg 2x
                   "
                   media="(max-width:767px)"
-                  sizes="450px"
                 />
                 <source
                   srcset="
@@ -318,7 +343,6 @@
                     ./images/team-images/olha-tablet@2x.jpg 2x
                   "
                   media="(max-width:1199px)"
-                  sizes="354px"
                 />
                 <source
                   srcset="
@@ -326,7 +350,6 @@
                     ./images/team-images/olha-desktop@2x.jpg 2x
                   "
                   media="(min-width:1200px)"
-                  sizes="270px"
                 />
                 <img src="./images/team-images/olha-mobile.jpg" alt="Фото Ольга Рєпіна" />
               </picture>
@@ -373,7 +396,6 @@
                     ./images/team-images/mykola-mobile@2x.jpg 2x
                   "
                   media="(max-width:767px)"
-                  sizes="450px"
                 />
                 <source
                   srcset="
@@ -381,7 +403,6 @@
                     ./images/team-images/mykola-tablet@2x.jpg 2x
                   "
                   media="(max-width:1199px)"
-                  sizes="354px"
                 />
                 <source
                   srcset="
@@ -389,7 +410,6 @@
                     ./images/team-images/mykola-desktop@2x.jpg 2x
                   "
                   media="(min-width:1200px)"
-                  sizes="270px"
                 />
                 <img src="./images/team-images/mykola-mobile.jpg" alt="Фото Микола Тарасов" />
               </picture>
@@ -436,7 +456,6 @@
                     ./images/team-images/mykhailo-mobile@2x.jpg 2x
                   "
                   media="(max-width:767px)"
-                  sizes="450px"
                 />
                 <source
                   srcset="
@@ -444,7 +463,6 @@
                     ./images/team-images/mykhailo-tablet@2x.jpg 2x
                   "
                   media="(max-width:1199px)"
-                  sizes="354px"
                 />
                 <source
                   srcset="
@@ -452,7 +470,6 @@
                     ./images/team-images/mykhailo-desktop@2x.jpg 2x
                   "
                   media="(min-width:1200px)"
-                  sizes="270px"
                 />
                 <img src="./images/team-images/mykhailo-mobile.jpg" alt="Фото Михайло Єрмаков" />
               </picture>
@@ -502,42 +519,42 @@
             <li class="clients__item">
               <a class="clients__ref" href="#">
                 <svg width="106" height="60">
-                  <use href="./images/icons.svg#icon-client01"></use>
+                  <use href="./images/logo-defs.svg#icon-logoclient01"></use>
                 </svg>
               </a>
             </li>
             <li class="clients__item">
               <a class="clients__ref" href="#">
                 <svg width="106" height="60">
-                  <use href="./images/icons.svg#icon-client02"></use>
+                  <use href="./images/logo-defs.svg#icon-logoclient02"></use>
                 </svg>
               </a>
             </li>
             <li class="clients__item">
               <a class="clients__ref" href="#">
                 <svg width="106" height="60">
-                  <use href="./images/icons.svg#icon-client03"></use>
+                  <use href="./images/logo-defs.svg#icon-logoclient03"></use>
                 </svg>
               </a>
             </li>
             <li class="clients__item">
               <a class="clients__ref" href="#">
                 <svg width="106" height="60">
-                  <use href="./images/icons.svg#icon-client04"></use>
+                  <use href="./images/logo-defs.svg#icon-logoclient04"></use>
                 </svg>
               </a>
             </li>
             <li class="clients__item">
               <a class="clients__ref" href="#">
                 <svg width="106" height="60">
-                  <use href="./images/icons.svg#icon-client05"></use>
+                  <use href="./images/logo-defs.svg#icon-logoclient05"></use>
                 </svg>
               </a>
             </li>
             <li class="clients__item">
               <a class="clients__ref" href="#">
                 <svg width="106" height="60">
-                  <use href="./images/icons.svg#icon-client06"></use>
+                  <use href="./images/logo-defs.svg#icon-logoclient06"></use>
                 </svg>
               </a>
             </li>

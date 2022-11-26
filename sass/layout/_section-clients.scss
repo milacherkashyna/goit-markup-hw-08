@@ -9,7 +9,7 @@
 .clients__item {
   max-width: 210px;
   max-height: 92px;
-  flex-basis: calc((100% - 30px))/2;
+  flex-basis: calc((100% - 30px)/2);
   @include mobile {
     width: 210px;
     height: 92px;
