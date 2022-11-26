@@ -1,4 +1,4 @@
-.hero {  
+.hero {
   margin: 0 auto;
   padding: 118px 0;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
@@ -42,10 +42,6 @@
   background-size: cover;
   background-position: center;
 
-  // @include mobile {
-  //   max-width: 480px;
-  // }
-
   @include desktop {
     padding: 200px 0;
   }
@@ -69,6 +65,11 @@
     line-height: calc(60/44);
   }
 }
+
 .button--hero {
   margin: 30px auto 0;
+
+  @include desktop {
+    width: 216px;
+  }
 }
