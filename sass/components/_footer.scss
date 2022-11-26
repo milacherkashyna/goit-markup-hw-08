@@ -119,9 +119,10 @@
 }
 
 .subscribe__mail {
+  display: inline-block;
   padding: 15px 16px;
   margin-bottom: 20px;
-  width: 358px;
+  width: 260px;
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: var(--white);
@@ -131,8 +132,17 @@
   border-radius: 4px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 
+  @include mobile {
+    width: 450px;
+  }
+
+  @include tablet {
+    width: 450px;
+  }
+
   @include desktop {
     margin-bottom: 0;
+    width: 358px;
   }
 }
 
