@@ -24,6 +24,7 @@
   width: 40px;
   height: 40px;
   fill: var(--dark);
+  transition: fill var(--time-animation) var(--cubic-bezier);
 
   .menu__button:hover &,
   .menu__button:focus & {
@@ -81,12 +82,15 @@
 }
 
 .menu__link:hover,
-.menu__link:focus {
+.menu__link:focus,
+.menu__link--active {
   color: var(--blue);
 }
+
 .menu__contacts {
   margin-top: auto;
 }
+
 .menu__contacts--tel {
   display: block;
   margin-bottom: 32px;
@@ -96,8 +100,8 @@
   letter-spacing: 0.02em;
   color: var(--blue);
   text-decoration: none;
-  // white-space: nowrap;
   cursor: pointer;
+
   @media screen and (max-width: 479px) {
     font-size: calc(21px + 2vw);
   }
@@ -117,10 +121,12 @@
 
 .menu__social {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   row-gap: 10px;
+  @media screen and (max-width: 479px) {
+    row-gap: 5px;
 }
-
+}
 .menu__social--ref {
   display: block;
   justify-content: left;
@@ -132,6 +138,9 @@
   color: var(--blue);
   text-decoration: none;
   cursor: pointer;
+  @media screen and (max-width: 479px) {
+    font-size: calc(7px + 2vw);
+  }
 }
 
 .menu__social--vr {
@@ -139,4 +148,7 @@
   height: 20px;
   margin: 0 10px;
   border-left: 1px solid #d0d0d0;
+  @media screen and (max-width: 479px) {
+    margin: 0 5px;
+}
 }

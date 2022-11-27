@@ -142,8 +142,7 @@
 
 .checkbox__label {
   display: block;
-  width: 16px;
-  height: 15px;
+  
 
   @include desktop {
     margin-left: 12px;
@@ -153,8 +152,8 @@
 .checkbox__castom {
   position: relative;
   display: inline-block;
-  width: 100%;
-  height: 100%;
+  width: 16px;
+  height: 15px;
   border-radius: 2px;
   cursor: pointer;
   border: 2px solid var(--dark);
@@ -168,11 +167,12 @@
 }
 
 .checkbox__text {
+  display: inline-block;
   font-size: 12px;
   line-height: calc(14/12);
   letter-spacing: 0.03em;
   color: var(--grey);
-}
+  }
 
 .checkbox__agree {
   color: var(--blue);
@@ -180,4 +180,7 @@
 
 .button--modal {
   margin: 30px auto 0;
+  @media screen and (max-width: 479px) {
+    margin: 20px auto 0
+  }
 }

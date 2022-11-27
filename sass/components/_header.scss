@@ -5,10 +5,9 @@
 
 .header__container {
   display: flex;
-  // box-align: center;
   align-items: center;
   position: relative;
-  // justify-content:space-between
+  
 }
 .header__logo {
   @media screen and (max-width:767px){

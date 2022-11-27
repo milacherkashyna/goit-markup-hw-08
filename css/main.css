@@ -486,6 +486,8 @@ ul {
   width: 40px;
   height: 40px;
   fill: var(--dark);
+  -webkit-transition: fill var(--time-animation) var(--cubic-bezier);
+  transition: fill var(--time-animation) var(--cubic-bezier);
 }
 .menu__button:hover .menu__icon, .menu__button:focus .menu__icon {
   fill: var(--blue);
@@ -562,7 +564,8 @@ ul {
 }
 
 .menu__link:hover,
-.menu__link:focus {
+.menu__link:focus,
+.menu__link--active {
   color: var(--blue);
 }
 
@@ -603,9 +606,14 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   row-gap: 10px;
+}
+@media screen and (max-width: 479px) {
+  .menu__social {
+    row-gap: 5px;
+  }
 }
 
 .menu__social--ref {
@@ -622,12 +630,22 @@ ul {
   text-decoration: none;
   cursor: pointer;
 }
+@media screen and (max-width: 479px) {
+  .menu__social--ref {
+    font-size: calc(7px + 2vw);
+  }
+}
 
 .menu__social--vr {
   display: block;
   height: 20px;
   margin: 0 10px;
   border-left: 1px solid #d0d0d0;
+}
+@media screen and (max-width: 479px) {
+  .menu__social--vr {
+    margin: 0 5px;
+  }
 }
 
 .logo {
@@ -821,8 +839,6 @@ ul {
 
 .checkbox__label {
   display: block;
-  width: 16px;
-  height: 15px;
 }
 @media screen and (min-width: 1200px) {
   .checkbox__label {
@@ -833,8 +849,8 @@ ul {
 .checkbox__castom {
   position: relative;
   display: inline-block;
-  width: 100%;
-  height: 100%;
+  width: 16px;
+  height: 15px;
   border-radius: 2px;
   cursor: pointer;
   border: 2px solid var(--dark);
@@ -848,6 +864,7 @@ ul {
 }
 
 .checkbox__text {
+  display: inline-block;
   font-size: 12px;
   line-height: 1.1666666667;
   letter-spacing: 0.03em;
@@ -860,6 +877,11 @@ ul {
 
 .button--modal {
   margin: 30px auto 0;
+}
+@media screen and (max-width: 479px) {
+  .button--modal {
+    margin: 20px auto 0;
+  }
 }
 
 .button {
@@ -1214,6 +1236,7 @@ ul {
 @media screen and (min-width: 1200px) {
   .hero {
     padding: 200px 0;
+    max-width: 1600px;
   }
 }
 
